@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Automated End2End Tests","Customer place an order by purchasing an item from search","SUCCESS","2018-11-01T13:31:06.338+02:00[Europe/Kiev]","0.0","10.04"
+"Gmail account","User is able to access his Gmail account","SUCCESS","2018-11-01T15:04:18.062+02:00[Europe/Kiev]","0.0","13.54"
