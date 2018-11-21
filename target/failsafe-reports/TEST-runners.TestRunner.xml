@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report.xsd" name="runners.TestRunner" time="0.001" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report.xsd" name="runners.TestRunner" time="0.004" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_141.jdk/Contents/Home/jre/lib"/>
@@ -63,8 +63,8 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="initializationError" classname="runners.TestRunner" time="0.001">
-    <error message="Not a file or directory: /Users/ivaylo_kunev/CucumberFramework/src/test/functionalTests" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Not a file or directory: /Users/ivaylo_kunev/CucumberFramework/src/test/functionalTests
+  <testcase name="initializationError" classname="runners.TestRunner" time="0.004">
+    <error message="cucumber.runtime.RuntimeOptions.getTagFilters()Ljava/util/List;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: cucumber.runtime.RuntimeOptions.getTagFilters()Ljava/util/List;
 </error>
   </testcase>
 </testsuite>

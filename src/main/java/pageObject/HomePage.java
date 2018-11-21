@@ -8,6 +8,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import managers.FileReaderManager;
+
 public class HomePage {
     WebDriver driver;
 
@@ -41,8 +43,9 @@ public class HomePage {
         PageFactory.initElements(driver, this);
     }
 
-    public void navigateTo_HomePage(String site) {
-        driver.get(site);
+    public void navigateTo_HomePage() throws InterruptedException {
+        driver.get(FileReaderManager.getInstance().getConfigReader().getApplicationUrl());
+        Thread.sleep(1000);
     }
 
     public void press_next_button() {
@@ -53,5 +56,9 @@ public class HomePage {
        Thread.sleep(1000);
         password_field.sendKeys(password);
     }
+
+
+
+
 
 }
