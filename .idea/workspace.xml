@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6b84fc0a-b4bc-4862-bc3e-c53050826fdf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,8 +87,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+            <state relative-caret-position="401">
+              <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -260,7 +261,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="plugi&#9;ACTION&#9;WelcomeScreen.Plugins&#10;plug&#9;ACTION&#9;WelcomeScreen.Plugins" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543325382645" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543325682001" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
@@ -295,7 +296,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="71" y="41" width="1400" height="772" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26067746" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -362,8 +362,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        <state relative-caret-position="401">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
         </state>
       </provider>
     </entry>
