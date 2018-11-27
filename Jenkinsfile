@@ -14,9 +14,10 @@ pipeline {
         stage('Stop Docker container') {
             steps {
                 withMaven(maven: 'Maven') {
-                    sh 'container=$(docker ps --format "{{.Names}}")'
-                    sh 'echo $container'
-                    sh '/usr/local/bin/docker stop $container'
+                    sh 'sh /Users/Shared/Jenkins/CucumberFramework/deploy.sh'
+                    //sh 'container=$(docker ps --format "{{.Names}}")'
+                    //sh 'echo $container'
+                    //sh '/usr/local/bin/docker stop $container'
 
                 }
 
