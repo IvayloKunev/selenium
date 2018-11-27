@@ -28,7 +28,7 @@ pipeline {
         stage('Shutdown Docker container') {
             steps {
                 withMaven(maven: 'Maven') {
-                    sh '/usr/local/bin/docker stop $(docker ps -a -q)'
+                    sh '/usr/local/bin/docker docker stop $(docker ps -a -q)'
 
 
                 }
