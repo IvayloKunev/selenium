@@ -15,6 +15,7 @@ pipeline {
             steps {
                 withMaven(maven: 'Maven') {
                     sh 'container=$(docker ps --format "{{.Names}}")'
+                    sh 'echo $container'
                     sh '/usr/local/bin/docker stop $container'
 
                 }
