@@ -11,10 +11,6 @@ pipeline {
 
         }
 
-    }
-
-
-    stages {
         stage('Stop Docker container') {
             steps {
                 withMaven(maven: 'Maven') {
@@ -26,5 +22,8 @@ pipeline {
             }
 
         }
+
     }
+
+
 }
