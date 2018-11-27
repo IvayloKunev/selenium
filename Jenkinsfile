@@ -1,10 +1,10 @@
 pipeline {
     agent any
     stages {
-    stage ('Compile stage') {
+    stage ('Deploy Docker container') {
         steps {
             withMaven(maven : 'Maven') {
-                sh 'mvn verify'
+                sh 'jenkins$ docker run -d -p 4444:4444 -p 5900:5900 -v /dev/shm:/dev/shm selenium/standalone-chrome-debug:3.141.59-bismuth'
         }
 
     }
@@ -14,7 +14,7 @@ pipeline {
     stage ('Testing Stage') {
         steps {
             withMaven(maven : 'Maven') {
-                sh 'mvn --version'
+                sh 'mvn verify'
             }
 
         }
@@ -24,7 +24,7 @@ pipeline {
     stage ('Deployment Stage') {
             steps {
                 withMaven(maven : 'Maven') {
-                    sh 'mvn --version'
+                    sh 'docker stop pedantic_heyrovsk'
                 }
 
             }
