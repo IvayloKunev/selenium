@@ -1,12 +1,15 @@
 pipeline {
-       agent {
-           docker { image 'node:7-alpine' }
-       }
-       stages {
-           stage('Test') {
-               steps {
-                   sh 'node --version'
-               }
-           }
-       }
+    agent any
+    stages {
+   stage ('Deploy Docker container') {
+        steps {
+            withDocker(docker : 'docker') {
+                sh 'docker run -d -p 4444:4444 -p 5900:5900 -v /dev/shm:/dev/shm selenium/standalone-chrome-debug:3.141.59-bismuth'
+        }
+
+    }
+
+    }
+
+   }
    }
