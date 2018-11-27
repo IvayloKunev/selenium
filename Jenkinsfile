@@ -11,13 +11,25 @@ pipeline {
 
         }
 
-        stage('Stop Docker container') {
+        stage('Running UI tests') {
             steps {
                 withMaven(maven: 'Maven') {
                     sh 'mvn verify'
                     //sh 'container=$(docker ps --format "{{.Names}}")'
                     //sh 'echo $container'
                     //sh '/usr/local/bin/docker stop $container'
+
+                }
+
+            }
+
+        }
+
+        stage('Shutdown Docker container') {
+            steps {
+                withMaven(maven: 'Maven') {
+                    sh '/usr/local/bin/docker stop $(docker ps -a -q)'
+
 
                 }
 
