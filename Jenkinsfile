@@ -5,7 +5,7 @@ pipeline {
     stage ('Testing Stage') {
         steps {
             withMaven(maven : 'Maven') {
-                sh 'mvn verify'
+                sh '/Users/Shared/Jenkins/CucumberFramework/deploy.sh'
             }
 
         }
@@ -15,7 +15,7 @@ pipeline {
     stage ('Stop Docker container') {
             steps {
                 withMaven(maven : 'Maven') {
-                    sh 'docker stop pedantic_heyrovsk'
+                    sh 'mvn --version'
                 }
 
             }
