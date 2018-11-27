@@ -1,25 +1,12 @@
 pipeline {
-    agent any
-    stages {
-
-    stage ('Testing Stage') {
-        steps {
-            withMaven(maven : 'Maven') {
-                sh '/Users/Shared/Jenkins/CucumberFramework/deploy.sh'
-            }
-
+    agent {
+        docker { image 'node:7-alpine' }
         }
-    }
-
-
-    stage ('Stop Docker container') {
-            steps {
-                withMaven(maven : 'Maven') {
-                    sh 'mvn --version'
-                }
-
-            }
-        }
-
-    }
-}
+        stages {
+            stage('Test') {
+                steps {
+                    sh 'node --version'
+                    }
+                    }
+                    }
+                    }
