@@ -70,8 +70,9 @@ public class Steps {
 
     @And("^I'm click on confirm my age button$")
     public void iMClickOnConfirmMyAgeButton() throws InterruptedException {
-        Thread.sleep(2000);
+        Thread.sleep(4000);
         home.press_age_button();
+        Thread.sleep(5000);
     }
 }
 
