@@ -1,3 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Gmail account","User is able to access his Gmail account","SUCCESS","2018-11-14T10:36:21.557+02:00[Europe/Kiev]","0.0","7.1"
-"Gmail account","Test Remote driver on docker machine","SUCCESS","2018-11-28T16:21:07.248+02:00[Europe/Sofia]","0.0","5.82"

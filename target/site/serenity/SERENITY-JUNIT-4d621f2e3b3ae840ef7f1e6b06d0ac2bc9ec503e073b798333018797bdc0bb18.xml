@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Gmail account" skipped="0" tests="2" time="10.03" timestamp="2018-11-14 10:36:21"><testcase name="User is able to access his Gmail account"/><testcase name="Test Remote driver on docker machine"/></testsuite>

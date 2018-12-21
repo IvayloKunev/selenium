@@ -5,13 +5,13 @@ import java.net.URL;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import managers.PageObjectManager;
 import managers.WebDriverManager;
 import pageObject.HomePage;
+
 
 public class Steps {
     WebDriver driver;
@@ -51,7 +51,7 @@ public class Steps {
         home.enter_password(password);
     }
 
-    @Given("^That i open google home page on remote machinte$")
+    @Given("^That i open google home page on remote machine$")
     public void thatIOpenGoogleHomePageOnRemoteMachinte() throws Throwable {
         URL server = new URL("http://0.0.0.0:4444/wd/hub");
 

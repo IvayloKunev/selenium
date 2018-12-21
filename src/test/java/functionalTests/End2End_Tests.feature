@@ -10,7 +10,7 @@ Feature: Gmail account
 
 
     Scenario: Test Remote driver on docker machine
-      Given That i open google home page on remote machinte
+      Given That i open google home page on remote machine
 
 
 
