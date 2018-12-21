@@ -52,7 +52,7 @@ public class Steps {
         home.enter_password(password);
     }
 
-    @Given("^That i open BLU official home page on remote machine$")
+    @Given("^That I open BLU official home page on remote machine$")
     public void thatIOpenGoogleHomePageOnRemoteMachinte() throws Throwable {
         URL server = new URL("http://0.0.0.0:4444/wd/hub");
 

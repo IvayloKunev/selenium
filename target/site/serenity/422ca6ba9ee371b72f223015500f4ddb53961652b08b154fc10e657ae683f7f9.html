@@ -96,7 +96,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-12-2018 11:19</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-12-2018 15:24</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -129,9 +129,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='far fa-stop-circle pending-icon fa-2x' title='PENDING'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
                             <span class="test-case-title">
-                                <span class="pending-color">
+                                <span class="error-color">
                                     Test Remote driver on docker machine
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -168,11 +168,11 @@
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
-                <tr class="test-PENDING">
+                <tr class="test-ERROR">
                     <td width="60" class="step-icon">
                         <a name="0"/>
                             <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='far fa-stop-circle pending-icon ' title='PENDING'></i></span>
+                                  class="top-level-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -182,13 +182,51 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">PENDING</span></td>
-                    <td width="100"><span class="top-level-step">0.01s</span></td>
+                    <td width="100"><span class="top-level-step">ERROR</span></td>
+                    <td width="100"><span class="top-level-step">0.7s</span></td>
                 </tr>
-                <tr class="test-PENDING">
+                    <tr class="test-ERROR">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="3" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Connect exception: Failed to connect to /0.0.0.0:4444</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-1""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-1">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.net.ConnectException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)<br />okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)<br />okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)<br />okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)<br />okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)<br />okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)<br />okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)<br />okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)<br />okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)<br />okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)<br />okhttp3.RealCall.execute(RealCall.java:77)<br />stepDefinitions.Steps.thatIOpenGoogleHomePageOnRemoteMachinte(Steps.java:64)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                    </td>
+                    </tr>
+                <tr class="test-ERROR">
                     <td colspan="2"></td>
-                    <td width="100"><span class="top-level-step"><em>PENDING</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>0.38s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>ERROR</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>0.99s</em></span></td>
                 </tr>
 
             </table>

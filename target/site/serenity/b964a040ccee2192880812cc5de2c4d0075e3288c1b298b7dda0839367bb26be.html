@@ -68,9 +68,11 @@
 
     <script class="code" type="text/javascript">$(document).ready(function () {
 
+
         $('.scenario-result-table').DataTable({
+
             "order": [[0, "asc",], [3, "asc",]],
-            "pageLength": 10,
+            "pageLength": 25,
             "language": {
                 searchPlaceholder: "Filter",
                 search: ""
@@ -80,31 +82,12 @@
         // Results table
         $('#test-results-table').DataTable({
             "order": [[0, "asc",], [3, "asc",]],
-            "pageLength": 10,
-            "lengthMenu": [[10, 25, 50, 100, 200, -1], [10, 25, 50, 100, 200, "All"]]
+            "pageLength": 100,
+            "lengthMenu": [[25, 50, 100, 200, -1], [25, 50, 100, 200, "All"]]
         });
 
-        $('#evidence-table').DataTable({
-                    searching: false,
-                    paging: false,
-                    info: false
-        });
-
-        $(".feature-coverage-table").DataTable({
-            searching: false,
-            paging: false,
-            info: false
-        });
-
-        $(".feature-coverage-table-with-pagination").DataTable({
-            order: [[0, "asc",]],
-            pageLength: 10,
-            language: {
-                searchPlaceholder: "Filter",
-                search: ""
-            }
-        });
-    });
+    })
+    ;
     </script>
 </head>
 
@@ -120,9 +103,12 @@
 
 <div class="middlecontent">
 
+
     <div id="contenttop">
         <div class="middlebg">
         <span class="breadcrumbs"><a href="index.html">Home</a>
+                > <span
+                    class="truncate-60">Unsuccessful Tests</span>
         </span>
         </div>
         <div class="rightbg"></div>
@@ -148,16 +134,24 @@
         <div class="middlb">
             <div class="table">
 
-                <h2>Test Results: All Tests</h2>
+                <h2>Unsuccessful Tests</h2>
                 <table class='overview'>
                     <tr>
                         <td width="375px" valign="top">
                             <div class="test-count-summary">
-                                <div class="test-count-title">
-                                1 test scenarios 
-                                 |
-                                    <a href="results.csv" title="Download CSV"> <i class="fa fa-download"
-                                                                                    title="Download CSV"></i></a>
+                                <div>
+
+                                1 unsuccessful test
+                                    across 1 scenario
+
+                                     |
+                                        <a href="b964a040ccee2192880812cc5de2c4d0075e3288c1b298b7dda0839367bb26be.csv" title="Download CSV"> <i class="fa fa-download"
+                                                                                        title="Download CSV"></i></a>
+
+                                    <p class="report-info"><i class="fas fa-info-circle"></i> Note that results include
+                                        data-driven scenarios containing unsuccessful test ,
+                                        which may also contain results other than unsuccessful test .</p>
+
 
 
                                 </div>
@@ -235,9 +229,7 @@
                                                         <table class="table">
                                                             <thead>
                                                             <tr>
-                                                                <th scope="col">Scenario Results (including rows of test
-                                                                    data)
-                                                                </th>
+                                                                <th scope="col">Scenarios</th>
                                                                 <th scope="col" colspan="2" class="automated-stats">
                                                                     Automated
                                                                 </th>
@@ -304,31 +296,6 @@
                                                                 <td class="aggregate-result-count">Total</td>
                                                                 <td class="automated-stats">1</td>
                                                                 <td class="automated-stats"></td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <table class="table">
-                                                            <thead>
-                                                            <tr>
-                                                                <th>Execution Time</th>
-                                                                <th>Clock Time</th>
-                                                                <th>Fastest Test</th>
-                                                                <th>Slowest Test</th>
-                                                                <th>Average Execution Time</th>
-                                                            </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                            <tr>
-                                                                <td>994ms</td>
-                                                                <td>0ms</td>
-                                                                <td>994ms</td>
-                                                                <td>994ms</td>
-                                                                <td>994ms</td>
                                                             </tr>
                                                             </tbody>
                                                         </table>
@@ -422,7 +389,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
                         </td>
 
                     </tr>

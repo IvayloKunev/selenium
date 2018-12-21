@@ -1,4 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: Feature: Open BLU landing page
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.03 s - in Feature: Open BLU landing page
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.782 s <<< FAILURE! - in Feature: Open BLU landing page
+Test Remote driver on docker machine(Open BLU landing page)  Time elapsed: 0.782 s  <<< ERROR!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'pc-00203.bg.westum.com', ip: 'fe80:0:0:0:1091:9acc:fed3:5528%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_191'
+Driver info: driver.version: RemoteWebDriver
+Caused by: java.net.ConnectException: Failed to connect to /0.0.0.0:4444
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+

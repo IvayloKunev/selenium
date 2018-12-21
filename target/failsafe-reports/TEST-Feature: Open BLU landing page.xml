@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report.xsd" name="Feature: Open BLU landing page" time="0.03" tests="1" errors="0" skipped="1" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report.xsd" name="Feature: Open BLU landing page" time="0.782" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib"/>
@@ -46,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher verify"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -64,9 +64,16 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="Test Remote driver on docker machine" classname="Open BLU landing page" time="0">
-    <skipped message="The step &quot;That I open BLU official home page on remote machine&quot; is undefined"/>
-    <system-out><![CDATA[11:19:36.835 [main] INFO  n.t.c.steps.ConsoleLoggingListener - &amp#27;[36m
+  <testcase name="Test Remote driver on docker machine" classname="Open BLU landing page" time="0.782">
+    <error message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;pc-00203.bg.westum.com&apos;, ip: &apos;fe80:0:0:0:1091:9acc:fed3:5528%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_191&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'pc-00203.bg.westum.com', ip: 'fe80:0:0:0:1091:9acc:fed3:5528%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_191'
+Driver info: driver.version: RemoteWebDriver
+Caused by: java.net.ConnectException: Failed to connect to /0.0.0.0:4444
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+</error>
+    <system-out><![CDATA[15:24:23.380 [main] INFO  n.t.c.steps.ConsoleLoggingListener - &amp#27;[36m
 
 -------------------------------------------------------------------------------------
      _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
@@ -83,9 +90,9 @@
  Learn Serenity BDD online at http://serenity-dojo.com                               
 -------------------------------------------------------------------------------------
 &amp#27;[0m
-11:19:36.852 [main] DEBUG n.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@b9ee77d8
-11:19:36.854 [main] INFO  n.t.c.steps.ConsoleLoggingListener - Test Suite Started: Open BLU landing page
-11:19:37.041 [pool-1-thread-1] INFO  n.t.c.steps.ConsoleLoggingListener - 
+15:24:23.385 [main] DEBUG n.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@b9ee77d8
+15:24:23.387 [main] INFO  n.t.c.steps.ConsoleLoggingListener - Test Suite Started: Open BLU landing page
+15:24:23.550 [pool-1-thread-1] INFO  n.t.c.steps.ConsoleLoggingListener - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
   | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
@@ -95,51 +102,150 @@
 
 TEST STARTED: Test Remote driver on docker machine
 -------------------------------------------------------------------(open-blu-landing-page;test-remote-driver-on-docker-machine)
-11:19:37.303 [pool-1-thread-1] DEBUG n.t.core.requirements.RootDirectory - Resource directories found in  in 16 ms: []
-11:19:37.309 [pool-1-thread-1] DEBUG n.t.core.requirements.RootDirectory - Resource directories found in /Users/Shared/Jenkins/CucumberFramework in 3 ms: []
-11:19:37.386 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reporting formats: [JSON, HTML]
-11:19:37.390 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Found reporter: net.thucydides.core.reports.xml.XMLTestOutcomeReporter@48b70d09(format = Optional[XML])
-11:19:37.391 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Found reporter: net.thucydides.core.reports.json.JSONTestOutcomeReporter@1b62cde3(format = Optional[JSON])
-11:19:37.393 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Registering reporter: net.thucydides.core.reports.json.JSONTestOutcomeReporter@1b62cde3
-11:19:37.490 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Found reporter: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1c142cd2(format = Optional[HTML])
-11:19:37.490 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Registering reporter: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1c142cd2
-11:19:37.492 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reporting formats: [JSON, HTML]
-11:19:37.530 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@1b62cde3
-11:19:37.533 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Open BLU landing page:Test Remote driver on docker machine
-11:19:37.533 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@1b62cde3: Generating report for test outcome: Open BLU landing page:Test Remote driver on docker machine
-11:19:37.538 [pool-1-thread-1] DEBUG n.t.c.r.j.JUnitXMLOutcomeReporter - GENERATING JUNIT REPORTS
-11:19:37.544 [pool-1-thread-1] DEBUG n.t.c.r.json.JSONTestOutcomeReporter - Generating JSON report for Test Remote driver on docker machine to file /Users/Shared/Jenkins/CucumberFramework/target/site/serenity/422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.json (using temp file /Users/Shared/Jenkins/CucumberFramework/target/site/serenity/422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.json359a435a-a16c-4c49-9505-1526a5c7aa1b)
-11:19:37.619 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Open BLU landing page:Test Remote driver on docker machine done
-11:19:37.819 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Shutting down executor service
-11:19:37.819 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reports generated in: 288 ms
-11:19:37.820 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1c142cd2
-11:19:37.820 [pool-2-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Open BLU landing page:Test Remote driver on docker machine
-11:19:37.820 [pool-1-thread-1] DEBUG n.t.c.r.j.JUnitXMLOutcomeReporter - GENERATING JUNIT REPORTS
-11:19:37.820 [pool-2-thread-1] DEBUG n.t.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1c142cd2: Generating report for test outcome: Open BLU landing page:Test Remote driver on docker machine
-11:19:37.821 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - GENERATE TEST OUTCOME REPORT FOR Test Remote driver on docker machine in 422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9
-11:19:37.831 [pool-2-thread-1] DEBUG n.t.c.r.RequirementsTagProvider - Requirements found:[]
-11:19:37.844 [pool-2-thread-1] DEBUG n.t.c.r.RequirementsTagProvider - Requirements found:[]
-11:19:37.952 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Open BLU landing page:Test Remote driver on docker machine in 422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.html in directory target/site/serenity  
-11:19:38.944 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - Generating report in 422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.html
-11:19:39.525 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - Generated report 422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.html in 581 ms
-11:19:39.525 [pool-2-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Open BLU landing page:Test Remote driver on docker machine done
-11:19:39.526 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Shutting down executor service
-11:19:39.527 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reports generated in: 1707 ms
+15:24:23.760 [pool-1-thread-1] DEBUG n.t.core.requirements.RootDirectory - Resource directories found in  in 11 ms: []
+15:24:23.764 [pool-1-thread-1] DEBUG n.t.core.requirements.RootDirectory - Resource directories found in /Users/Shared/Jenkins/CucumberFramework in 2 ms: []
+15:24:24.567 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reporting formats: [JSON, HTML]
+15:24:24.573 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Found reporter: net.thucydides.core.reports.xml.XMLTestOutcomeReporter@13232b7(format = Optional[XML])
+15:24:24.574 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Found reporter: net.thucydides.core.reports.json.JSONTestOutcomeReporter@4ffcc302(format = Optional[JSON])
+15:24:24.574 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Registering reporter: net.thucydides.core.reports.json.JSONTestOutcomeReporter@4ffcc302
+15:24:24.664 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Found reporter: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@7757c83a(format = Optional[HTML])
+15:24:24.664 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Registering reporter: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@7757c83a
+15:24:24.667 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reporting formats: [JSON, HTML]
+15:24:24.687 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@4ffcc302
+15:24:24.688 [pool-1-thread-1] DEBUG n.t.c.r.j.JUnitXMLOutcomeReporter - GENERATING JUNIT REPORTS
+15:24:24.688 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Open BLU landing page:Test Remote driver on docker machine
+15:24:24.689 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@4ffcc302: Generating report for test outcome: Open BLU landing page:Test Remote driver on docker machine
+15:24:24.698 [pool-1-thread-1] DEBUG n.t.c.r.json.JSONTestOutcomeReporter - Generating JSON report for Test Remote driver on docker machine to file /Users/Shared/Jenkins/CucumberFramework/target/site/serenity/422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.json (using temp file /Users/Shared/Jenkins/CucumberFramework/target/site/serenity/422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.json6928330e-3e1b-4c67-bee5-4b372817ae4c)
+15:24:24.763 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Open BLU landing page:Test Remote driver on docker machine done
+15:24:25.068 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Shutting down executor service
+15:24:25.068 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reports generated in: 381 ms
+15:24:25.069 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@7757c83a
+15:24:25.070 [pool-1-thread-1] DEBUG n.t.c.r.j.JUnitXMLOutcomeReporter - GENERATING JUNIT REPORTS
+15:24:25.070 [pool-2-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Open BLU landing page:Test Remote driver on docker machine
+15:24:25.070 [pool-2-thread-1] DEBUG n.t.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@7757c83a: Generating report for test outcome: Open BLU landing page:Test Remote driver on docker machine
+15:24:25.070 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - GENERATE TEST OUTCOME REPORT FOR Test Remote driver on docker machine in 422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9
+15:24:25.092 [pool-2-thread-1] DEBUG n.t.c.r.RequirementsTagProvider - Requirements found:[]
+15:24:25.097 [pool-2-thread-1] DEBUG n.t.c.r.RequirementsTagProvider - Requirements found:[]
+15:24:25.203 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Open BLU landing page:Test Remote driver on docker machine in 422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.html in directory target/site/serenity  
+15:24:25.205 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - Generating report in 422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.html
+15:24:25.697 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - Generated report 422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.html in 492 ms
+15:24:25.697 [pool-2-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Open BLU landing page:Test Remote driver on docker machine done
+15:24:25.698 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Shutting down executor service
+15:24:25.698 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reports generated in: 629 ms
 
-1 Scenarios (&amp#27;[33m1 undefined&amp#27;[0m)
-1 Steps (&amp#27;[33m1 undefined&amp#27;[0m)
-0m0.652s
+&amp#27;[31mFailed scenarios:&amp#27;[0m
+&amp#27;[31msrc/test/java/functionalTests/End2End_Tests.feature:4 &amp#27;[0m# Test Remote driver on docker machine
 
+1 Scenarios (&amp#27;[31m1 failed&amp#27;[0m)
+1 Steps (&amp#27;[31m1 failed&amp#27;[0m)
+0m1.283s
 
-You can implement missing steps with the snippets below:
+org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'pc-00203.bg.westum.com', ip: 'fe80:0:0:0:1091:9acc:fed3:5528%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_191'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+	at stepDefinitions.Steps.thatIOpenGoogleHomePageOnRemoteMachinte(Steps.java:64)
+	at ✽.That I open BLU official home page on remote machine(src/test/java/functionalTests/End2End_Tests.feature:5)
+Caused by: java.net.ConnectException: Failed to connect to /0.0.0.0:4444
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+	at stepDefinitions.Steps.thatIOpenGoogleHomePageOnRemoteMachinte(Steps.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:31)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:25)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:393)
+	at org.apache.maven.surefire.junitcore.pc.InvokerStrategy.schedule(InvokerStrategy.java:54)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler.schedule(Scheduler.java:352)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:393)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:204)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+	... 69 more
 
+Connecting to http://0.0.0.0:4444/wd/hub
+15:24:24.484 [pool-1-thread-1] ERROR n.t.c.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
 
-@Given("^That I open BLU official home page on remote machine$")
-public void that_I_open_BLU_official_home_page_on_remote_machine() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
+TEST FAILED WITH ERROR: Test Remote driver on docker machine
+---------------------------------------------------------------------
+15:24:24.486 [pool-1-thread-1] DEBUG n.t.c.steps.ConsoleLoggingListener - RELATED ISSUES: 
+15:24:24.558 [pool-1-thread-1] ERROR n.t.c.steps.ConsoleLoggingListener - TEST FAILED AT STEP Given That I open BLU official home page on remote machine
+15:24:24.558 [pool-1-thread-1] ERROR n.t.c.steps.ConsoleLoggingListener - Failed to connect to /0.0.0.0:4444
 ]]></system-out>
   </testcase>
 </testsuite>
