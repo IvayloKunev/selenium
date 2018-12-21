@@ -67,9 +67,7 @@ public class HomePage {
     }
 
     public void press_age_button() throws InterruptedException {
-        Thread.sleep(10000);
         confirm_age_button.click();
-        Thread.sleep(10000);
     }
 
 
