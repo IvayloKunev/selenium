@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report.xsd" name="Feature: Open BLU landing page" time="0.017" tests="1" errors="0" skipped="1" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report.xsd" name="Feature: Open BLU landing page" time="0.03" tests="1" errors="0" skipped="1" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib"/>
@@ -46,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher verify"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -66,7 +66,7 @@
   </properties>
   <testcase name="Test Remote driver on docker machine" classname="Open BLU landing page" time="0">
     <skipped message="The step &quot;That I open BLU official home page on remote machine&quot; is undefined"/>
-    <system-out><![CDATA[11:27:16.456 [main] INFO  n.t.c.steps.ConsoleLoggingListener - &amp#27;[36m
+    <system-out><![CDATA[11:19:36.835 [main] INFO  n.t.c.steps.ConsoleLoggingListener - &amp#27;[36m
 
 -------------------------------------------------------------------------------------
      _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
@@ -83,9 +83,9 @@
  Learn Serenity BDD online at http://serenity-dojo.com                               
 -------------------------------------------------------------------------------------
 &amp#27;[0m
-11:27:16.463 [main] DEBUG n.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@b9ee77d8
-11:27:16.465 [main] INFO  n.t.c.steps.ConsoleLoggingListener - Test Suite Started: Open BLU landing page
-11:27:16.617 [pool-1-thread-1] INFO  n.t.c.steps.ConsoleLoggingListener - 
+11:19:36.852 [main] DEBUG n.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@b9ee77d8
+11:19:36.854 [main] INFO  n.t.c.steps.ConsoleLoggingListener - Test Suite Started: Open BLU landing page
+11:19:37.041 [pool-1-thread-1] INFO  n.t.c.steps.ConsoleLoggingListener - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
   | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
@@ -95,40 +95,40 @@
 
 TEST STARTED: Test Remote driver on docker machine
 -------------------------------------------------------------------(open-blu-landing-page;test-remote-driver-on-docker-machine)
-11:27:16.844 [pool-1-thread-1] DEBUG n.t.core.requirements.RootDirectory - Resource directories found in  in 12 ms: []
-11:27:16.848 [pool-1-thread-1] DEBUG n.t.core.requirements.RootDirectory - Resource directories found in /Users/Shared/Jenkins/CucumberFramework in 2 ms: []
-11:27:16.911 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reporting formats: [JSON, HTML]
-11:27:16.917 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Found reporter: net.thucydides.core.reports.xml.XMLTestOutcomeReporter@3443d8d3(format = Optional[XML])
-11:27:16.917 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Found reporter: net.thucydides.core.reports.json.JSONTestOutcomeReporter@47bf92fb(format = Optional[JSON])
-11:27:16.917 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Registering reporter: net.thucydides.core.reports.json.JSONTestOutcomeReporter@47bf92fb
-11:27:17.004 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Found reporter: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@5a48c52c(format = Optional[HTML])
-11:27:17.004 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Registering reporter: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@5a48c52c
-11:27:17.005 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reporting formats: [JSON, HTML]
-11:27:17.042 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@47bf92fb
-11:27:17.043 [pool-1-thread-1] DEBUG n.t.c.r.j.JUnitXMLOutcomeReporter - GENERATING JUNIT REPORTS
-11:27:17.043 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Open BLU landing page:Test Remote driver on docker machine
-11:27:17.044 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@47bf92fb: Generating report for test outcome: Open BLU landing page:Test Remote driver on docker machine
-11:27:17.052 [pool-1-thread-1] DEBUG n.t.c.r.json.JSONTestOutcomeReporter - Generating JSON report for Test Remote driver on docker machine to file /Users/Shared/Jenkins/CucumberFramework/target/site/serenity/422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.json (using temp file /Users/Shared/Jenkins/CucumberFramework/target/site/serenity/422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.json8428e1fa-3379-4cf7-b713-ea70572800fb)
-11:27:17.154 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Open BLU landing page:Test Remote driver on docker machine done
-11:27:17.336 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Shutting down executor service
-11:27:17.336 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reports generated in: 294 ms
-11:27:17.336 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@5a48c52c
-11:27:17.337 [pool-1-thread-1] DEBUG n.t.c.r.j.JUnitXMLOutcomeReporter - GENERATING JUNIT REPORTS
-11:27:17.337 [pool-2-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Open BLU landing page:Test Remote driver on docker machine
-11:27:17.338 [pool-2-thread-1] DEBUG n.t.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@5a48c52c: Generating report for test outcome: Open BLU landing page:Test Remote driver on docker machine
-11:27:17.338 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - GENERATE TEST OUTCOME REPORT FOR Test Remote driver on docker machine in 422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9
-11:27:17.351 [pool-2-thread-1] DEBUG n.t.c.r.RequirementsTagProvider - Requirements found:[]
-11:27:17.356 [pool-2-thread-1] DEBUG n.t.c.r.RequirementsTagProvider - Requirements found:[]
-11:27:17.449 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Open BLU landing page:Test Remote driver on docker machine in 422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.html in directory target/site/serenity  
-11:27:17.451 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - Generating report in 422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.html
-11:27:17.901 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - Generated report 422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.html in 450 ms
-11:27:17.901 [pool-2-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Open BLU landing page:Test Remote driver on docker machine done
-11:27:17.902 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Shutting down executor service
-11:27:17.902 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reports generated in: 566 ms
+11:19:37.303 [pool-1-thread-1] DEBUG n.t.core.requirements.RootDirectory - Resource directories found in  in 16 ms: []
+11:19:37.309 [pool-1-thread-1] DEBUG n.t.core.requirements.RootDirectory - Resource directories found in /Users/Shared/Jenkins/CucumberFramework in 3 ms: []
+11:19:37.386 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reporting formats: [JSON, HTML]
+11:19:37.390 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Found reporter: net.thucydides.core.reports.xml.XMLTestOutcomeReporter@48b70d09(format = Optional[XML])
+11:19:37.391 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Found reporter: net.thucydides.core.reports.json.JSONTestOutcomeReporter@1b62cde3(format = Optional[JSON])
+11:19:37.393 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Registering reporter: net.thucydides.core.reports.json.JSONTestOutcomeReporter@1b62cde3
+11:19:37.490 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Found reporter: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1c142cd2(format = Optional[HTML])
+11:19:37.490 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Registering reporter: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1c142cd2
+11:19:37.492 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reporting formats: [JSON, HTML]
+11:19:37.530 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@1b62cde3
+11:19:37.533 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Open BLU landing page:Test Remote driver on docker machine
+11:19:37.533 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@1b62cde3: Generating report for test outcome: Open BLU landing page:Test Remote driver on docker machine
+11:19:37.538 [pool-1-thread-1] DEBUG n.t.c.r.j.JUnitXMLOutcomeReporter - GENERATING JUNIT REPORTS
+11:19:37.544 [pool-1-thread-1] DEBUG n.t.c.r.json.JSONTestOutcomeReporter - Generating JSON report for Test Remote driver on docker machine to file /Users/Shared/Jenkins/CucumberFramework/target/site/serenity/422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.json (using temp file /Users/Shared/Jenkins/CucumberFramework/target/site/serenity/422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.json359a435a-a16c-4c49-9505-1526a5c7aa1b)
+11:19:37.619 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Open BLU landing page:Test Remote driver on docker machine done
+11:19:37.819 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Shutting down executor service
+11:19:37.819 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reports generated in: 288 ms
+11:19:37.820 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1c142cd2
+11:19:37.820 [pool-2-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Open BLU landing page:Test Remote driver on docker machine
+11:19:37.820 [pool-1-thread-1] DEBUG n.t.c.r.j.JUnitXMLOutcomeReporter - GENERATING JUNIT REPORTS
+11:19:37.820 [pool-2-thread-1] DEBUG n.t.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1c142cd2: Generating report for test outcome: Open BLU landing page:Test Remote driver on docker machine
+11:19:37.821 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - GENERATE TEST OUTCOME REPORT FOR Test Remote driver on docker machine in 422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9
+11:19:37.831 [pool-2-thread-1] DEBUG n.t.c.r.RequirementsTagProvider - Requirements found:[]
+11:19:37.844 [pool-2-thread-1] DEBUG n.t.c.r.RequirementsTagProvider - Requirements found:[]
+11:19:37.952 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Open BLU landing page:Test Remote driver on docker machine in 422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.html in directory target/site/serenity  
+11:19:38.944 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - Generating report in 422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.html
+11:19:39.525 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - Generated report 422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.html in 581 ms
+11:19:39.525 [pool-2-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Open BLU landing page:Test Remote driver on docker machine done
+11:19:39.526 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Shutting down executor service
+11:19:39.527 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reports generated in: 1707 ms
 
 1 Scenarios (&amp#27;[33m1 undefined&amp#27;[0m)
 1 Steps (&amp#27;[33m1 undefined&amp#27;[0m)
-0m0.536s
+0m0.652s
 
 
 You can implement missing steps with the snippets below:

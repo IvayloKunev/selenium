@@ -1,10 +1,8 @@
 package stepDefinitions;
 
-import java.net.MalformedURLException;
 import java.net.URL;
 
 import cucumber.api.PendingException;
-import managers.FileReaderManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -23,7 +21,7 @@ public class Steps {
     WebDriverManager webDriverManager;
 
     @Given("^user is on Home Page$")
-    public void user_is_on_Home_Page() throws InterruptedException, MalformedURLException {
+    public void user_is_on_Home_Page() throws InterruptedException {
         webDriverManager = new WebDriverManager();
         driver = webDriverManager.getDriver();
         pageObjectManager = new PageObjectManager(driver);
@@ -56,9 +54,31 @@ public class Steps {
 
     @Given("^That i open BLU official home page on remote machine$")
     public void thatIOpenGoogleHomePageOnRemoteMachinte() throws Throwable {
-      driver.get(FileReaderManager.getInstance().getConfigReader().getApplicationUrl());
+        URL server = new URL("http://0.0.0.0:4444/wd/hub");
+
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setBrowserName("chrome");
+
+        System.out.println("Connecting to " + server);
+
+        WebDriver driver = new RemoteWebDriver(server, capabilities);
+
+        driver.get("https://www.blu.com/en/GB");
+
+        Thread.sleep(2000);
+        ((RemoteWebDriver) driver).findElementByXPath("//button[contains(text(), 'Yes, I am over 18')]").click();
+        Thread.sleep(3000);
+
+        driver.quit();
 
     }
 
+//
+//    @And("^I'm click on confirm my age button$")
+//    public void iMClickOnConfirmMyAgeButton() throws InterruptedException {
+//        Thread.sleep(2000);
+//        home.press_age_button();
+//        Thread.sleep(3000);
+//    }
 }
 
