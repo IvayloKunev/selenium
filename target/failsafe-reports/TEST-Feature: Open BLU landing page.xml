@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report.xsd" name="Feature: Open BLU landing page" time="0.03" tests="1" errors="0" skipped="1" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.191-b12"/>
+    <property name="user.country.format" value="BG"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/Shared/Jenkins/CucumberFramework"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/Shared/Jenkins/CucumberFramework"/>
+    <property name="java.runtime.version" value="1.8.0_191-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/m3/kqqszd7113b9f_001bf_lyzm00008b/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/Shared/Jenkins/Home/apache-maven-3.6.0/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/Shared/Jenkins/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Users/Shared/Jenkins/Home/apache-maven-3.6.0/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.13.6"/>
+    <property name="library.jansi.path" value="/Users/Shared/Jenkins/Home/apache-maven-3.6.0/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/Shared/Jenkins"/>
+    <property name="user.timezone" value="Europe/Sofia"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="jenkins"/>
+    <property name="java.class.path" value="/Users/Shared/Jenkins/Home/apache-maven-3.6.0/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_191"/>
+    <property name="java.ext.dirs" value="/Users/Shared/Jenkins/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/Shared/Jenkins/Home/apache-maven-3.6.0"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="Test Remote driver on docker machine" classname="Open BLU landing page" time="0">
+    <skipped message="The step &quot;That I open BLU official home page on remote machine&quot; is undefined"/>
+    <system-out><![CDATA[11:19:36.835 [main] INFO  n.t.c.steps.ConsoleLoggingListener - &amp#27;[36m
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+ Learn Serenity BDD online at http://serenity-dojo.com                               
+-------------------------------------------------------------------------------------
+&amp#27;[0m
+11:19:36.852 [main] DEBUG n.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@b9ee77d8
+11:19:36.854 [main] INFO  n.t.c.steps.ConsoleLoggingListener - Test Suite Started: Open BLU landing page
+11:19:37.041 [pool-1-thread-1] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Test Remote driver on docker machine
+-------------------------------------------------------------------(open-blu-landing-page;test-remote-driver-on-docker-machine)
+11:19:37.303 [pool-1-thread-1] DEBUG n.t.core.requirements.RootDirectory - Resource directories found in  in 16 ms: []
+11:19:37.309 [pool-1-thread-1] DEBUG n.t.core.requirements.RootDirectory - Resource directories found in /Users/Shared/Jenkins/CucumberFramework in 3 ms: []
+11:19:37.386 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reporting formats: [JSON, HTML]
+11:19:37.390 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Found reporter: net.thucydides.core.reports.xml.XMLTestOutcomeReporter@48b70d09(format = Optional[XML])
+11:19:37.391 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Found reporter: net.thucydides.core.reports.json.JSONTestOutcomeReporter@1b62cde3(format = Optional[JSON])
+11:19:37.393 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Registering reporter: net.thucydides.core.reports.json.JSONTestOutcomeReporter@1b62cde3
+11:19:37.490 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Found reporter: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1c142cd2(format = Optional[HTML])
+11:19:37.490 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Registering reporter: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1c142cd2
+11:19:37.492 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reporting formats: [JSON, HTML]
+11:19:37.530 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@1b62cde3
+11:19:37.533 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Open BLU landing page:Test Remote driver on docker machine
+11:19:37.533 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@1b62cde3: Generating report for test outcome: Open BLU landing page:Test Remote driver on docker machine
+11:19:37.538 [pool-1-thread-1] DEBUG n.t.c.r.j.JUnitXMLOutcomeReporter - GENERATING JUNIT REPORTS
+11:19:37.544 [pool-1-thread-1] DEBUG n.t.c.r.json.JSONTestOutcomeReporter - Generating JSON report for Test Remote driver on docker machine to file /Users/Shared/Jenkins/CucumberFramework/target/site/serenity/422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.json (using temp file /Users/Shared/Jenkins/CucumberFramework/target/site/serenity/422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.json359a435a-a16c-4c49-9505-1526a5c7aa1b)
+11:19:37.619 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Open BLU landing page:Test Remote driver on docker machine done
+11:19:37.819 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Shutting down executor service
+11:19:37.819 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reports generated in: 288 ms
+11:19:37.820 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1c142cd2
+11:19:37.820 [pool-2-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Open BLU landing page:Test Remote driver on docker machine
+11:19:37.820 [pool-1-thread-1] DEBUG n.t.c.r.j.JUnitXMLOutcomeReporter - GENERATING JUNIT REPORTS
+11:19:37.820 [pool-2-thread-1] DEBUG n.t.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1c142cd2: Generating report for test outcome: Open BLU landing page:Test Remote driver on docker machine
+11:19:37.821 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - GENERATE TEST OUTCOME REPORT FOR Test Remote driver on docker machine in 422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9
+11:19:37.831 [pool-2-thread-1] DEBUG n.t.c.r.RequirementsTagProvider - Requirements found:[]
+11:19:37.844 [pool-2-thread-1] DEBUG n.t.c.r.RequirementsTagProvider - Requirements found:[]
+11:19:37.952 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Open BLU landing page:Test Remote driver on docker machine in 422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.html in directory target/site/serenity  
+11:19:38.944 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - Generating report in 422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.html
+11:19:39.525 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - Generated report 422ca6ba9ee371b72f223015500f4ddb53961652b08b154fc10e657ae683f7f9.html in 581 ms
+11:19:39.525 [pool-2-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Open BLU landing page:Test Remote driver on docker machine done
+11:19:39.526 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Shutting down executor service
+11:19:39.527 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reports generated in: 1707 ms
+
+1 Scenarios (&amp#27;[33m1 undefined&amp#27;[0m)
+1 Steps (&amp#27;[33m1 undefined&amp#27;[0m)
+0m0.652s
+
+
+You can implement missing steps with the snippets below:
+
+
+@Given("^That I open BLU official home page on remote machine$")
+public void that_I_open_BLU_official_home_page_on_remote_machine() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+]]></system-out>
+  </testcase>
+</testsuite>

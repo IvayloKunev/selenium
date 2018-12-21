@@ -1,16 +1,8 @@
-Feature: Gmail account
-  Description: The purpose of this feature is to tests the access to Gmail account
+Feature: Open BLU landing page
+  Description: Smoke plan - the purpose of this feature is to open the BLU landing page
 
-#  Scenario: User is able to access his Gmail account
-#    Given user is on Home Page
-#    And enter an email address "kunata1109@gmail.com"
-#    And press the Next button
-#    And enter the password "Secret_123"
-#    And press the Next button
-
-
-    Scenario: Test Remote driver on docker machine
-      Given That i open BLU official home page on remote machine
+  Scenario: Test Remote driver on docker machine
+    Given That I open BLU official home page on remote machine
 
 
 

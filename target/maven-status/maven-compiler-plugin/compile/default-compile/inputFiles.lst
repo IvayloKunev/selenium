@@ -1,0 +1,8 @@
+/Users/Shared/Jenkins/CucumberFramework/src/main/java/pageObject/HomePage.java
+/Users/Shared/Jenkins/CucumberFramework/src/main/java/managers/FileReaderManager.java
+/Users/Shared/Jenkins/CucumberFramework/src/main/java/managers/PageObjectManager.java
+/Users/Shared/Jenkins/CucumberFramework/src/main/java/cucumber/TestContext.java
+/Users/Shared/Jenkins/CucumberFramework/src/main/java/managers/WebDriverManager.java
+/Users/Shared/Jenkins/CucumberFramework/src/main/java/enums/DriverType.java
+/Users/Shared/Jenkins/CucumberFramework/src/main/java/dataProviders/ConfigFileReader.java
+/Users/Shared/Jenkins/CucumberFramework/src/main/java/enums/EnvironmentType.java
