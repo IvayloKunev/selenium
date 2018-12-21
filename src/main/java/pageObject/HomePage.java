@@ -13,6 +13,9 @@ public class HomePage {
     WebDriver driver;
 
 
+    @FindBy(how = How.XPATH, using = "//button[contains(text(), 'Yes, I am over 18')] ")
+    private WebElement confirm_age_button;
+
     @FindBy(how = How.XPATH, using = "//a[@class = 'gmail-nav__nav-link gmail-nav__nav-link__sign-in']")
     private WebElement Log_in_button;
 
@@ -56,7 +59,9 @@ public class HomePage {
         password_field.sendKeys(password);
     }
 
-
+    public void press_age_button() {
+        confirm_age_button.click();
+    }
 
 
 

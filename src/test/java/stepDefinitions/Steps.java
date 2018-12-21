@@ -2,6 +2,7 @@ package stepDefinitions;
 
 import java.net.URL;
 
+import cucumber.api.PendingException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -51,7 +52,7 @@ public class Steps {
         home.enter_password(password);
     }
 
-    @Given("^That i open google home page on remote machine$")
+    @Given("^That i open BLU official home page on remote machine$")
     public void thatIOpenGoogleHomePageOnRemoteMachinte() throws Throwable {
         URL server = new URL("http://0.0.0.0:4444/wd/hub");
 
@@ -67,5 +68,10 @@ public class Steps {
         driver.quit();
     }
 
+
+    @And("^I'm click on confirm my age button$")
+    public void iMClickOnConfirmMyAgeButton()  {
+        home.press_age_button();
+    }
 }
 
