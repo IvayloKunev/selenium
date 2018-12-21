@@ -69,6 +69,8 @@ public class Steps {
         ((RemoteWebDriver) driver).findElementByXPath("//button[contains(text(), 'Yes, I am over 18')]").click();
         Thread.sleep(3000);
 
+        driver.quit();
+
     }
 
 //
