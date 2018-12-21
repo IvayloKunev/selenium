@@ -13,8 +13,15 @@ public class HomePage {
     WebDriver driver;
 
 
-    @FindBy(how = How.XPATH, using = "//button[contains(text(), 'Yes, I am over 18')] ")
+
+
+    @FindBy(how = How.XPATH, using = "/html/body/footer/div[2]/div[3]/div/div/div/div[2]/div/div/div/div[3]/button[1]")
     private WebElement confirm_age_button;
+
+
+//    @FindBy(how = How.XPATH, using = "//button[contains(text(), 'Yes, I am over 18')]")
+//    private WebElement confirm_age_button;
+
 
     @FindBy(how = How.XPATH, using = "//a[@class = 'gmail-nav__nav-link gmail-nav__nav-link__sign-in']")
     private WebElement Log_in_button;
