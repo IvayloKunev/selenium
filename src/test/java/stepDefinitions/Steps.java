@@ -62,7 +62,7 @@ public class Steps {
 
         WebDriver driver = new RemoteWebDriver(server, capabilities);
 
-        driver.get("http://www.google.com");
+        driver.get("https://www.blu.com/en/GB");
 
         driver.quit();
     }
