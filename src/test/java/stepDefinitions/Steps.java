@@ -66,7 +66,7 @@ public class Steps {
         driver.get("https://www.blu.com/en/GB");
 
         Thread.sleep(2000);
-        home.press_age_button();
+        ((RemoteWebDriver) driver).findElementByXPath("//button[contains(text(), 'Yes, I am over 18')]").click();
         Thread.sleep(3000);
 
     }
