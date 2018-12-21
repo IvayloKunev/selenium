@@ -15,12 +15,12 @@ public class HomePage {
 
 
 
-    @FindBy(how = How.XPATH, using = "/html/body/footer/div[2]/div[3]/div/div/div/div[2]/div/div/div/div[3]/button[1]")
-    private WebElement confirm_age_button;
-
-
-//    @FindBy(how = How.XPATH, using = "//button[contains(text(), 'Yes, I am over 18')]")
+//    @FindBy(how = How.XPATH, using = "/html/body/footer/div[2]/div[3]/div/div/div/div[2]/div/div/div/div[3]/button[1]")
 //    private WebElement confirm_age_button;
+
+
+    @FindBy(how = How.XPATH, using = "//button[contains(text(), 'Yes, I am over 18')]")
+    private WebElement confirm_age_button;
 
 
     @FindBy(how = How.XPATH, using = "//a[@class = 'gmail-nav__nav-link gmail-nav__nav-link__sign-in']")
@@ -66,7 +66,7 @@ public class HomePage {
         password_field.sendKeys(password);
     }
 
-    public void press_age_button() throws InterruptedException {
+    public void press_age_button()  {
         confirm_age_button.click();
     }
 
