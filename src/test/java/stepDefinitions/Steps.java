@@ -65,13 +65,12 @@ public class Steps {
 
         driver.get("https://www.blu.com/en/GB");
 
-        driver.quit();
     }
 
 
     @And("^I'm click on confirm my age button$")
     public void iMClickOnConfirmMyAgeButton() throws InterruptedException {
-        Thread.sleep(4000);
+        Thread.sleep(2000);
         home.press_age_button();
     }
 }
