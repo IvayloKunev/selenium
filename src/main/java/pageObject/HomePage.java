@@ -59,7 +59,8 @@ public class HomePage {
         password_field.sendKeys(password);
     }
 
-    public void press_age_button() {
+    public void press_age_button() throws InterruptedException {
+        Thread.sleep(2000);
         confirm_age_button.click();
     }
 
