@@ -24,7 +24,7 @@ pipeline {
         stage('Shutdown Docker container') {
             steps {
                 withMaven(maven: 'Maven') {
-                sh '/usr/local/bin/docker-compose down'
+                sh '/usr/local/bin/docker stop nginx2'
                     sh '/usr/local/bin/docker rm nginx2'
                 }
 
