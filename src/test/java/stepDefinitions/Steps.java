@@ -67,7 +67,7 @@ public class Steps {
 
         Thread.sleep(2000);
         // //input[contains(@class, 'css-15fkfiy eji5cz42')]
-        ((RemoteWebDriver) driver).findElementByXPath("//input[contains(@class, 'css-15fkfiy eji5cz42')]").click();
+        ((RemoteWebDriver) driver).findElementByXPath("//label[contains(@class, 'css-1rltafb eji5cz41' )]").click();
        // ((RemoteWebDriver) driver).findElementByXPath("//button[contains(text(), 'Yes, I am over 18')]").click();
         Thread.sleep(3000);
 
