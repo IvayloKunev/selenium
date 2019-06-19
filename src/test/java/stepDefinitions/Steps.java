@@ -65,11 +65,9 @@ public class Steps {
 
         driver.get("https://www.blu.com/en/GB");
 
-
-        // I will also need a phone number for shipping purposes.I will also need a phone number for shipping purposes.I will also need a phone number for shipping purposes.
-        //I will also need a phone number for shipping purposes.I will also need a phone number for shipping purposes.I will also need a phone number for shipping purposes.I will also need a phone number for shipping purposes.
-
-
+        Thread.sleep(4000);
+        ((RemoteWebDriver)driver).findElementByXPath("//a[contains(text(), 'No, I am under 18')]").click();
+        Thread.sleep(3000);
 
     }
 
