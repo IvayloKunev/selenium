@@ -1,9 +1,0 @@
-cucumber/TestContext.class
-managers/PageObjectManager.class
-enums/EnvironmentType.class
-managers/WebDriverManager.class
-managers/WebDriverManager$1.class
-managers/FileReaderManager.class
-enums/DriverType.class
-pageObject/HomePage.class
-dataProviders/ConfigFileReader.class
