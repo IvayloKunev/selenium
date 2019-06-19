@@ -66,7 +66,9 @@ public class Steps {
         driver.get("https://www.blu.com/en/GB");
 
         Thread.sleep(2000);
-        ((RemoteWebDriver) driver).findElementByXPath("//button[contains(text(), 'Yes, I am over 18')]").click();
+        // //input[contains(@class, 'css-15fkfiy eji5cz42')]
+        ((RemoteWebDriver) driver).findElementByXPath("//input[contains(@class, 'css-15fkfiy eji5cz42')]").click();
+       // ((RemoteWebDriver) driver).findElementByXPath("//button[contains(text(), 'Yes, I am over 18')]").click();
         Thread.sleep(3000);
 
         driver.quit();
